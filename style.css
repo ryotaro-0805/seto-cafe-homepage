@@ -1,0 +1,144 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "游明朝", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho",
+        "serif";
+    min-width: 350px;
+    background-color: #333;
+}
+
+header {
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    height: 100px;
+    font-size: 3rem;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    position: relative;
+    z-index: 10;
+    transform: translateY(150px);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+
+
+header h1:hover {
+    opacity: 0.8;
+}
+
+header h1::before {
+    content: "";
+    margin-right: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-image: url(./img/logo.png);
+    background-size: contain;
+    z-index: 10;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    position: relative;
+    z-index: 10;
+    transform: translateY(160px);
+}
+
+.header_div ul {
+    width: 100%;
+    font-size: 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    opacity: 0.9;
+    z-index: 100;
+}
+
+.header_div ul li {
+    width: 33.3%;
+    padding: 10px 0;
+    background-color: rgb(36, 31, 31);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.header_div ul li:not(:last-of-type) {
+    border-right: solid 1px white;
+}
+
+.header_div ul li:hover {
+    background-color: rgba(75, 30, 30, 0.9);
+}
+
+.header_img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header p {
+    width: 100%;
+    font-size: 1rem;
+    color: white;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+@media screen and (min-width: 500px) {
+    html {
+        font-size: 30px;
+    }
+    body {
+        max-width: 1000px;
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    header h1 {
+        transform: translateY(300px);
+    }
+
+    header h2 {
+        transform: translateY(400px);
+    }
+}
+/*
+main
+*/
+
+.conection {
+    margin: 0;
+    width: 100wh;
+    height: 100px;
+    background: linear-gradient(rgb(77, 36, 17), #333);
+    background-color: #fff;
+}
+
+main h3 {
+    margin: 0;
+    color: #fff;
+}
