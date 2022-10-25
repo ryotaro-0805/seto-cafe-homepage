@@ -106,9 +106,17 @@ shop
 }
 
 .shop_div p{
+    width: 700px;
+    margin: 0 auto;
     text-align: left;
+
 }
 
 .shop_div p::before{
     content: "　　　";
+}
+
+.pay_button{
+    font-size: 15px;
+    padding: 5px 10px;
 }
