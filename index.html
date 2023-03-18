@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>長崎市のコーヒー豆専門店</title>
+    <title>長崎市のコーヒー豆専門店　瀬戸珈琲　こだわりの焙煎</title>
 </head>
+
 <body>
     <header>
         <div class="header_div">
@@ -20,39 +22,41 @@
         <h1>瀬戸珈琲</h1>
         <img class="header_img" src="./img/header_img.jpeg" alt="header_img" srcset="">
         <h2>長崎市のコーヒー豆専門店</h2>
-        <p>おいしいコーヒーを求めて15年のオーナーが<br>たどり着いたのは自家焙煎でした</p>
+        <p>おいしいコーヒーを求めて15年のオーナーが<br>たどり着いたのは自家焙煎でした<br><br>焙煎職人のこだわりは<br>あえて手間のかかる『直火式焙煎』<br><br>焙煎に無駄な時間なんて物はないと<br>焙煎職人は語ります</p>
     </header>
     <main>
         <div class="conection"></div>
         <div class="conectionDummy"></div>
         <hr>
         <div class="main_div">
-                <a href="./html/beans.html">
+            <a href="./html/beans.html">
                 <h3>こだわりの豆</h3>
                 <img src="./img/d-img4.jpg" alt="" srcset="">
-                <p>美味しいコーヒーは<br/>こだわりの『豆』選びから</p>
-            </a>
-            </div>
-            <hr>
-            <div class="main_div">
-                <a href="./html/item.html">
-                <h3>こだわりの道具</h3>
-                <img src="./img/d-img1.jpg" alt="" srcset="">
-            <p>美味しいコーヒーは<br/>こだわりの『道具』選びから</p>
+                <p>美味しいコーヒーは<br />こだわりの『豆』選びから</p>
             </a>
         </div>
         <hr>
         <div class="main_div">
+            <a href="./html/item.html">
+                <h3>こだわりの道具</h3>
+                <img src="./img/d-img1.jpg" alt="" srcset="">
+                <p>美味しいコーヒーは<br />こだわりの『道具』選びから</p>
+            </a>
+        </div>
+        <hr>
+        <div class="main_div">
+            <a href="./html/roasting.html">
             <h3>こだわりの焙煎</h3>
             <img src="./img/d-img5.jpg" alt="" srcset="">
             <img src="./img/d-img2.jpg" alt="" srcset="">
-            <p>美味しいコーヒーは<br/>こだわりの『焙煎』から</p>
+            <p>美味しいコーヒーは<br />こだわりの『焙煎』から</p>
+        </a>
         </div>
         <hr>
         <div class="main_div">
             <h3>コーヒーへの愛情</h3>
             <img src="./img/d-img6.jpg" alt="" srcset="">
-            <p>美味しいコーヒーは<br/>コーヒーへの『愛情』から</p>
+            <p>美味しいコーヒーは<br />コーヒーへの『愛情』から</p>
         </div>
 
     </main>
@@ -60,7 +64,18 @@
     <footer>
         <p>Copyright © 2010-2022 瀬戸珈琲 All Rights Resarved.</p>
     </footer>
+<!--
+    scrollreceal-画像アニメーションライブラリ
+-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true, distance: "50px", duration: 1500 });
+        // ScrollReveal().reveal('.img', { delay: 100, origin: "left" });
+        ScrollReveal().reveal('.main_div', '.beans_main', { delay: 100, origin: "bottom", interval: 0 });
+    </script>
+    
+    <!-- <script src="script.js"></script> -->
 
-    <script src="script.js"></script>
 </body>
+
 </html>

@@ -128,16 +128,16 @@ header p {
     }
 
     header h1 {
-        transform: translateY(300px);
+        transform: translateY(200px);
     }
 
     header h2 {
-        transform: translateY(350px);
+        transform: translateY(250px);
     }
 
     header p {
         position: absolute;
-        top: 600px;
+        top: 500px;
         left: 50%;
         transform: translateX(-50%);
         z-index: 10;

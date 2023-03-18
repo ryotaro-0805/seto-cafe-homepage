@@ -91,8 +91,8 @@ shop
 }
 
 .shop_div input{
-    width: 30px;
-    vertical-align: 5px;
+    margin-right: 10px;
+    transform: scale(1.5);
 }
 
 .shop_div select{
@@ -106,7 +106,6 @@ shop
 }
 
 .shop_div p{
-    width: 700px;
     margin: 0 auto;
     text-align: left;
 
@@ -119,4 +118,19 @@ shop
 .pay_button{
     font-size: 15px;
     padding: 5px 10px;
+}
+
+/*
+rousting
+*/
+.rousting_main{
+    background-image: url(../img/roasting.jpg);
+}
+
+.video_div{
+    position: absolute;
+    top: 0;;
+    z-index: 10;
+    height: 500px;
+    background-color: aqua;
 }
