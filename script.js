@@ -4,10 +4,10 @@ const input=document.getElementById('shop_input');
 
 
 
-input.addEventListener('click',()=>{
-    if (input.checked){
-        select.disabled=false;
-    } else {
-        select.disabled=true;
-    }
-});
+// input.addEventListener('click',()=>{
+//     if (input.checked){
+//         select.disabled=false;
+//     } else {
+//         select.disabled=true;
+//     }
+// });

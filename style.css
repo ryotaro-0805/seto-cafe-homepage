@@ -18,11 +18,12 @@ body {
     background-color: #333;
 }
 
-img{
+img {
     width: 100%;
 }
 
-a, a:visited{
+a,
+a:visited {
     text-decoration: none;
     color: #fff;
 }
@@ -43,8 +44,6 @@ header h1 {
     cursor: pointer;
     transition: 0.25s;
 }
-
-
 
 header h1:hover {
     opacity: 0.8;
@@ -171,19 +170,19 @@ main h3 {
     margin: 0;
 }
 
-.conectionDummy{
+.conectionDummy {
     height: 100px;
 }
 
-main h3{
+main h3 {
     text-align: center;
 }
 
-.main_div{
+.main_div {
     position: relative;
 }
 
-.main_div p{
+.main_div p {
     width: 100%;
     font-weight: bold;
     text-align: center;
@@ -194,30 +193,30 @@ main h3{
     transform: translate(-50%, -50%);
 }
 
-.main_div img{
+.main_div img {
     opacity: 0.6;
-    transition: .25s;
+    transition: 0.25s;
     display: flex;
 }
 
-.main_div:not(:last-of-type){
+.main_div:not(:last-of-type) {
     cursor: pointer;
     margin-bottom: 50px;
 }
 
-.main_div:hover img{
+.main_div:hover img {
     opacity: 1;
 }
 
 /* 
 footer
  */
- footer{
+footer {
     width: 100%;
     text-align: center;
-    font-size: .8rem;
+    font-size: 0.8rem;
     padding: 20px 0px;
     background-color: rgb(36, 31, 31);
     position: absolute;
     left: 0;
- }
+}

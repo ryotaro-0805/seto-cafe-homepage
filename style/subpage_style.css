@@ -8,8 +8,8 @@ main {
     background-size: cover;
 }
 
-.beans_main{
-    background-image: url(../img/d-img4.jpg);;
+.beans_main {
+    background-image: url(../img/d-img4.jpg);
 }
 
 h2 {
@@ -25,26 +25,27 @@ h2 {
     z-index: 10;
 }
 
-
-table ,td ,th{
+table,
+td,
+th {
     border: solid 1px #fff;
     position: relative;
     z-index: 10;
 }
 
-th{
+th {
     width: 30%;
 }
 
-td{
+td {
     width: 70%;
 }
 
 @media screen and (min-width: 500px) {
     main::before {
-        content: '';
+        content: "";
         width: 100%;
-        height: 110%;
+        height: 100%;
         position: absolute;
         top: 50px;
         left: -5px;
@@ -52,85 +53,91 @@ td{
         background: inherit;
         filter: blur(5px);
     }
-    
 }
 
 /* 
 item
 */
 
-.item_main{
+.item_main {
     background-image: url(../img/d-img1.jpg);
     text-shadow: 1px 1px 1px 1px black;
     text-shadow: -1px -1px 1px black;
 }
 
-.item_main img{
+.item_main img {
     margin-right: 50px;
     text-align: center;
     width: 25%;
     opacity: 0.8;
 }
 
-.item_div{
+.item_div {
     text-align: right;
 }
 
 /* 
 shop
 */
-.shop_main .header_p{
+.shop_main .header_p {
     text-align: center;
 }
 
-.shop_div{
+.shop_div {
     min-height: 600px;
     text-align: center;
     position: relative;
     z-index: 20;
 }
 
-.shop_div input{
+.shop_div input {
     margin-right: 10px;
     transform: scale(1.5);
 }
 
-.shop_div select{
+.shop_div select {
     font-size: 0.7rem;
     margin-left: 30px;
     vertical-align: 5px;
 }
 
-.shop_div div{
+.shop_div div {
     margin-bottom: 30px;
 }
 
-.shop_div p{
+.shop_div p {
     margin: 0 auto;
     text-align: left;
-
 }
 
-.shop_div p::before{
+.shop_div p::before {
     content: "　　　";
 }
 
-.pay_button{
+.pay_button {
     font-size: 15px;
     padding: 5px 10px;
 }
 
-/*
-rousting
-*/
-.rousting_main{
+/* 
+roasting
+ */
+
+.roasting_main {
     background-image: url(../img/roasting.jpg);
+    height: 100vh;
 }
 
-.video_div{
+.video_div {
     position: absolute;
-    top: 0;;
-    z-index: 10;
-    height: 500px;
-    background-color: aqua;
+    left: 5%;
+    bottom: 5%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: black 5px 5px 5px;
+    object-fit: cover;
+}
+
+video {
+    display: block;
 }
